@@ -1,0 +1,1 @@
+ /home/mobile_dev/Desktop/Flutter/whataspp_clone_ui/.dart_tool/flutter_build/11a2f3102b639d3b643e65fa143c5416/native_assets.yaml: 
