@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whataspp_clone_ui/infor.dart';
 import 'package:whataspp_clone_ui/widgets/my_message_card.dart';
+import 'package:whataspp_clone_ui/widgets/sender_message_card.dart';
 
 class ChartList extends StatelessWidget {
   const ChartList({super.key});
@@ -17,8 +18,10 @@ class ChartList extends StatelessWidget {
             date: messages[index]['time'].toString(),
           );
         }
-        return null;
-        // sendMessage card
+        return SenderMessageCard(
+          message: messages[index]['text'].toString(),
+          date: messages[index]['time'].toString(),
+        );
       },
     );
   }

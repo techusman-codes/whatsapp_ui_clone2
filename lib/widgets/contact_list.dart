@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:whataspp_clone_ui/colors.dart';
 import 'package:whataspp_clone_ui/infor.dart';
+import 'package:whataspp_clone_ui/screens/mobile_chart_screen.dart';
 
 class ContactList extends StatelessWidget {
   const ContactList({super.key});
@@ -18,7 +19,13 @@ class ContactList extends StatelessWidget {
           return Column(
             children: [
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.of(context).push(
+                    MaterialPageRoute(
+                      builder: (context) => MobileChartScreen(),
+                    ),
+                  );
+                },
                 child: Padding(
                   padding: const EdgeInsets.all(8.0),
                   child: ListTile(
